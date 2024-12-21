@@ -67,13 +67,11 @@
 			</div>
 		</div>
 		<div class="mt-4 flex justify-center">
-			<!-- 카카오 로그인 버튼 -->
-			<a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=0adf0657dcb2255caf8aec036b66bd0b&redirect_uri=http://localhost:8082/usr/kakao/login" 
-			   class="w-full text-center px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500 transition inline-block">
-				<img src="https://developers.kakao.com/assets/img/about/logos/kakaologin/logo/kakao_login_medium_narrow.png" 
-				     alt="카카오 로그인" style="height: 24px; vertical-align: middle;" /> 카카오 로그인
-			</a>
-		</div>
+    <a href="/usr/kakao/login" 
+       class="w-full text-center px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500 transition inline-block">
+        카카오 로그인
+    </a>
+</div>
 	</div>
 </section>
 

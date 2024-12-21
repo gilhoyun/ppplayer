@@ -38,7 +38,17 @@ public class UsrKakaoController {
     }
 
     @GetMapping("/usr/kakao/login")
-    public String kakaoLogin(@RequestParam("code") String code, HttpServletRequest req) {
+    public String kakaoLoginRedirect() {
+        String kakaoAuthUrl = "https://kauth.kakao.com/oauth/authorize"
+                + "?client_id=" + client_id
+                + "&redirect_uri=" + redirect_uri
+                + "&response_type=code";
+        
+        return "redirect:" + kakaoAuthUrl;
+    }
+
+    @GetMapping("/usr/kakao/callback")
+    public String kakaoCallback(@RequestParam("code") String code, HttpServletRequest req) {
         // 카카오 OAuth2 인증 코드로 액세스 토큰 요청
         String tokenUrl = "https://kauth.kakao.com/oauth/token";
 

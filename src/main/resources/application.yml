@@ -29,4 +29,4 @@ spring:
             enable: true
 kakao:
  client_id: 0adf0657dcb2255caf8aec036b66bd0b
- redirect_uri: http://localhost:8082/usr/kakao/login   
+ redirect_uri: http://localhost:8082/usr/kakao/callback
