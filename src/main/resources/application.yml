@@ -1,0 +1,32 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: demo
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/SB_AM?
+    username: root
+    password:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mailtestcjh@gmail.com
+    password: xohvhfpztqxdzaqo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+kakao:
+ client_id: 0adf0657dcb2255caf8aec036b66bd0b
+ redirect_uri: http://localhost:8082/usr/kakao/login   
